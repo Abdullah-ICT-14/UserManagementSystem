@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,11 @@
                         </form>
                     </div>
                     <div class="row">
-                        <p>Don't have an account? <a href="#">Sign Up!</a>&nbsp;&nbsp;&nbsp <a href="#">Forget Password!</a></p>
+                        <p>
+                            Don't have an account?  @Html.ActionLink("Sign Up!", "SignUp", "Home")&nbsp;&nbsp;&nbsp
+
+                            @Html.ActionLink("Forget Password!", "ForgetPassword", "Home")
+                        </p>
                         
                     </div>
                 </div>
