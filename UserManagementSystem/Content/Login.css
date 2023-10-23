@@ -91,3 +91,7 @@ form {
         background-color: #008080;
         color: #fff;
     }
+.required::after {
+    content: ' *';
+    color: red;
+}

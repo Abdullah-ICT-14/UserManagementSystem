@@ -9,39 +9,43 @@
 
 
 <body>
-    <!-- Main Content -->
-    <div class="container-fluid">
-        <div class="row main-content bg-success text-center">
-            <div class="col-md-12 col-xs-12 col-sm-12 login_form ">
-                <div class="container-fluid">
-                    <div class="row">
-                        <h2>User Management System</h2>
-                    </div>
-                    <div class="row">
-                        <form control="" class="form-group">
-                            <div class="row">
-                                <input type="text" name="userid" id="username" class="form__input" placeholder="UserID">
-                            </div>
-                            <div class="row">
-                                <!-- <span class="fa fa-lock"></span> -->
-                                <input type="password" name="password" id="password" class="form__input" placeholder="Password">
-                            </div>
-                            <div class="row">
-                                <input type="submit" value="Login" class="btn">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <p>
-                            Don't have an account?  @Html.ActionLink("Sign Up!", "SignUp", "Home")&nbsp;&nbsp;&nbsp
+    
+        <!-- Main Content -->
+        <div class="container-fluid">
+            <div class="row main-content bg-success text-center">
+                <div class="col-md-12 col-xs-12 col-sm-12 login_form ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h2>User Management System</h2>
+                        </div>
+                        <div class="row">
+                            <form  method="post" action="" control="" class="form-group">
+                                <div class="row">
+                                    <label> User ID</label>&emsp;
+                                    <input type="text" name="userid" id="username" class="form__input" required>
+                                </div>
+                                <div class="row">
+                                    <label> Password</label>&emsp;
+                                    <!-- <span class="fa fa-lock"></span> -->
+                                    <input type="password" name="password" id="password" class="form__input" required>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Login" class="btn">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <p>
+                                Don't have an account?  @Html.ActionLink("Sign Up!", "SignUp", "Home")&nbsp;&nbsp;&nbsp
 
-                            @Html.ActionLink("Forget Password!", "ForgetPassword", "Home")
-                        </p>
-                        
+                                @Html.ActionLink("Forget Password!", "ForgetPassword", "Home")
+                            </p>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
 </body>
 </html>
