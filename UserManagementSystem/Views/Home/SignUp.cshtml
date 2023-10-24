@@ -25,14 +25,17 @@
                     </div>
                     <div class="row">
                         <form method="post" action="" control="" class="form-group">
-                            <div class="row">
-                                <label> Employee ID</label>&emsp;&emsp;&emsp;&emsp;
-                                <input type="text" name="employeeid" id="employeeid" class="form__input">
-                            </div>
+
                             <div class="row">
                                 <label class="required"> User ID</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                                 <input type="text" name="userid" id="userid" class="form__input" required>
                             </div>
+
+                            <div class="row">
+                                <label> Employee ID</label>&emsp;&emsp;&emsp;&emsp;
+                                <input type="text" name="employeeid" id="employeeid" class="form__input">
+                            </div>
+
 
                             <div class="row">
                                 <label class="required"> Name</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -75,7 +78,7 @@
 
 
                             <div class="row">
-                                
+
 
                                 <input type="submit" value="Submit" class="btn"> @Html.ActionLink("Cancel", "Index", "Home", new { @class = "btn" })
 
