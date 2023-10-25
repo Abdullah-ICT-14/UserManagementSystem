@@ -131,6 +131,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202310250237055_userInfo.cs" />
+    <Compile Include="Migrations\202310250237055_userInfo.designer.cs">
+      <DependentUpon>202310250237055_userInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -193,6 +198,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202310250237055_userInfo.resx">
+      <DependentUpon>202310250237055_userInfo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
