@@ -13,7 +13,7 @@ namespace UserManagementSystem.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202310250237055_userInfo"; }
+            get { return "202310250320294_userInfo"; }
         }
         
         string IMigrationMetadata.Source

@@ -12,7 +12,7 @@
                 c => new
                     {
                         UserId = c.String(nullable: false, maxLength: 128),
-                        EmployeeId = c.String(nullable: false),
+                        EmployeeId = c.String(),
                         Name = c.String(nullable: false),
                         Mobile = c.String(nullable: false),
                         Email = c.String(nullable: false),

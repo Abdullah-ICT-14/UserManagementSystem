@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Yinka Enoch Adedokun">
     <link rel="stylesheet" href="~/Content/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 
@@ -19,7 +21,7 @@
                             <h2>User Management System</h2>
                         </div>
                         <div class="row">
-                            <form  method="post" action="" control="" class="form-group">
+                            <form  method="post" action="" control="" class="form-group" id="loginForm">
                                 <div class="row">
                                     <label> User ID</label>&emsp;
                                     <input type="text" name="userid" id="username" class="form__input" required>
@@ -28,6 +30,8 @@
                                     <label> Password</label>&emsp;
                                     <!-- <span class="fa fa-lock"></span> -->
                                     <input type="password" name="password" id="password" class="form__input" required>
+                                    <i id="toggle-password" class="fa fa-eye"></i>
+                                
                                 </div>
                                 <div class="row">
                                     <input type="submit" value="Login" class="btn">
@@ -46,6 +50,6 @@
                 </div>
             </div>
         </div>
-    
+        <script src="~/Scripts/Login.js"></script>
 </body>
 </html>
