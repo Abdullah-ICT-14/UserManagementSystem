@@ -8,5 +8,7 @@ namespace UserManagementSystem.Models
     public class UserContext: DbContext
     {
         public DbSet<User> users { get; set; }
+        public DbSet<SpecialCode> specialCodes { get; set; }
+        public DbSet<Password>passwords { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿
+﻿@using UserManagementSystem.Models
+@model User
 @{
     ViewBag.Title = "SignUp";
 }
@@ -28,7 +29,8 @@
                         <form method="post" action="" control="" class="form-group" id="signupForm">
                             <div class="row">
                                 <label class="required"> User ID</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                                <input type="text" name="userid" id="userid" class="form__input" required>
+                                <input type="text" name="userid" id="userid" class="form__input" required><br />
+                                @Html.ValidationMessageFor(model => model.UserId)
                             </div>
 
                             <div class="row">
@@ -49,14 +51,14 @@
 
                             <div class="row">
                                 <label class="required"> Email</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                                <input type="email" name="mail" id="email" class="form__input" required>
+                                <input type="email" name="email" id="email" class="form__input" required>
                             </div>
-
-                            <div class="row">
-                                <label class="required"> Date of Birth</label>&emsp;&emsp;&emsp;
-                                <input type="date" name="dob" id="dob" class="form__input" required>
-                            </div>
-
+                            <!--
+    <div class="row">
+        <label class="required"> Date of Birth</label>&emsp;&emsp;&emsp;
+        <input type="date" name="dob" id="dob" class="form__input" required>
+    </div>
+        -->
                             <div class="row">
                                 <label class="required"> Password</label>&emsp;&emsp;&emsp;&emsp;
                                 <!-- <span class="fa fa-lock"></span> -->
@@ -71,12 +73,14 @@
                                 <i id="ctoggle-password" class="fa fa-eye"></i>
                             </div>
 
+                            <!--
+        <div class="row">
+        <div class="g-recaptcha" data-sitekey="6LcTA8IoAAAAAExhzdRT85QtzTSMr3cTJ7yOmLwO"></div>
+        <br />
 
-                            <div class="row">
-                                <div class="g-recaptcha" data-sitekey="6LcTA8IoAAAAAExhzdRT85QtzTSMr3cTJ7yOmLwO"></div>
-                                <br />
+    </div>
+    -->
 
-                            </div>
 
 
                             <div class="row">
@@ -92,6 +96,10 @@
             </div>
         </div>
     </div>
+
+    @ViewBag.Message
+
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="~/Scripts/signup.js"></script>
 </body>

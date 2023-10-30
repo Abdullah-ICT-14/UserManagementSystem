@@ -131,9 +131,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202310250320294_userInfo.cs" />
-    <Compile Include="Migrations\202310250320294_userInfo.designer.cs">
-      <DependentUpon>202310250320294_userInfo.cs</DependentUpon>
+    <Compile Include="Migrations\202310300453209_UserManagementDatabase.cs" />
+    <Compile Include="Migrations\202310300453209_UserManagementDatabase.designer.cs">
+      <DependentUpon>202310300453209_UserManagementDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
@@ -203,8 +203,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202310250320294_userInfo.resx">
-      <DependentUpon>202310250320294_userInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202310300453209_UserManagementDatabase.resx">
+      <DependentUpon>202310300453209_UserManagementDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
